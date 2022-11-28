@@ -1,0 +1,30 @@
+{
+  "name": "uitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-dev": "npx dotenv -e ./envs/dev.env -- npx playwright test --workers 6",
+    "test-stage": "npx dotenv -e ./envs/stage.env -- npx playwright test --workers 6",
+    "test-prod": "npx dotenv -e ./envs/prod.env -- npx playwright test --workers 6",
+    "test-dev-headed": "npx dotenv -e ./envs/dev.env -- npx playwright test --headed --workers 6",
+    "test-stage-headed": "npx dotenv -e ./envs/stage.env -- npx playwright test --headed --workers 6",
+    "test-prod-headed": "npx dotenv -e ./envs/prod.env -- npx playwright test --headed --workers 6",
+    "test-dev-individually": "npx dotenv -e ./envs/dev.env -- npx playwright test",
+    "test-stage-individually": "npx dotenv -e ./envs/stage.env -- npx playwright test",
+    "test-prod-individually": "npx dotenv -e ./envs/prod.env -- npx playwright test",
+    "test-dev-individually-headed": "npx dotenv -e ./envs/dev.env -- npx playwright test --headed",
+    "test-stage-individually-headed": "npx dotenv -e ./envs/stage.env -- npx playwright test --headed",
+    "test-prod-individually-headed": "npx dotenv -e ./envs/prod.env -- npx playwright test --headed",
+    "generate-report": "npx allure generate allure-results -o allure-report --clean",
+    "open-report": "npx allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "allure-playwright": "^2.0.0-beta.19",
+    "dotenv-cli": "^6.0.0"
+  }
+}
