@@ -1,7 +1,7 @@
 export default {
     credentials: {
-        testCorrectEmail: 'kurdirafat@gmail.com',
-        testCorrectPasword: '223noob997',
+        testCorrectEmail: 'testuser@gmail.com',
+        testCorrectPasword: 'testpassword',
         testIncorrectEmail: 'test@gmail.com',
         testIncorrectPassword: 'Test123456',
     },
@@ -13,8 +13,8 @@ export default {
 
     loginPageTitle: 'Behavio',
     projectsPagePath: '/projects',
-    username: 'Rafat Kurdi',
-    workspace: 'McDonald’s Workspace',
+    username: 'Test Usert',
+    workspace: 'Test Workspace',
     videoFilesPaths: [
         {
             filePath: 'resources/videoSample.mp4',
